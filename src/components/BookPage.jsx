@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function BookPage() {
@@ -18,13 +18,15 @@ export default function BookPage() {
     
 
     return (
-        <div className="max-w-2xl mx-auto px-4 py-8">
+        <div>
             {books.map(book => (
-                <article key={book.key} className="bg-white shadow-md rounded-lg p-6 mb-4">
-                    <h4 className="text-2xl font-bold mb-2">{book.title}</h4>
-                    <p className="text-gray-700">Forfatter(e): {book.author_name}</p>
-                    <p className="text-gray-700">Første publiseringsår: {book.first_publish_year}</p>
-                    <img src={`https://covers.openlibrary.org/a/olid/${book.key}-M.jpg`} alt={book.title} className="mt-4 w-full" />
+                <article key={book.key} className="bookPage">
+                    {book.cover_i && (
+                        <img src={`https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`} alt={book.title} />
+                    )}
+                    <h4>{book.title}</h4>
+                    <p>Forfatter(e): {book.author_name}</p>
+                    <p>Første publiseringsår: {book.first_publish_year}</p>
                 </article>
             ))}
         </div>
