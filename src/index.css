@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+    background-color: #fff; /* Hvit bakgrunn */
+    color: #4a5568; /* Mørk grå tekstfarge */
+    font-family: 'Inter', sans-serif; /* Bruk skrifttypen Inter */
+  }
+  
+  .book-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 0;
+    margin-top: 25px;
+    box-sizing: border-box;
+  }
+  
+  .book-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0; /* Lys grå ramme */
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Hvit bakgrunn */
+  }
+  
+  .book-card img {
+    width: 100%;
+  }
+  
+  .book-card h3 {
+    margin-top: 10px;
+    color: #2d3748; /* Mørk grå overskriftsfarge */
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+    color: #4a5568; /* Mørk grå tekstfarge */
+  }
+  
+  .link {
+    display: inline-block;
+    padding: 6px 12px; 
+    background-color: #4c51bf; /* Lilla bakgrunnsfarge */
+    color: #fff; /* Hvit tekstfarge */
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    background-color: #4338ca; /* Mørkere lilla ved hover */
+  }
+  
+  .bokArkiv {
+    text-decoration: none;
+    color: #4a5568; /* Mørk grå tekstfarge */
+  }
+  
+  footer {
+    background-color: #1a202c; /* Mørk grå bakgrunnsfarge */
+    color: #cbd5e0; /* Lys grå tekstfarge */
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 25px;
+  }
+  
+  .img-cover {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .bookPage {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0; /* Lys grå ramme */
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Hvit bakgrunn */
+    margin: 0 auto;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4c51bf; /* Lilla bakgrunnsfarge */
+    color: #fff; /* Hvit tekstfarge */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  

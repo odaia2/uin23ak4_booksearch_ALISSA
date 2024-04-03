@@ -27,6 +27,8 @@ export default function BookPage() {
                     <h4>{book.title}</h4>
                     <p>Forfatter(e): {book.author_name}</p>
                     <p>Første publiseringsår: {book.first_publish_year}</p>
+                    <p>Rating: {book.ratings_average}</p>
+                    
                 </article>
             ))}
         </div>
