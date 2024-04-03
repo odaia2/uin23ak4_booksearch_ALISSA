@@ -28,7 +28,7 @@ function App() {
   }, [searchTerm]);
 
   return (
-    <Layout>
+    <Layout setSearchTerm={searchTerm}>
       <Routes>
         <Route index element={<SearchResult error={error} search={searchTerm} books={books} setSearch={setSearchTerm} getBooks={getBooks} />} />
         <Route path='/book/:id' element={<BookPage />} />
