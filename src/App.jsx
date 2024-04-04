@@ -3,6 +3,10 @@ import Layout from './components/Layout';
 import SearchResult from './components/SearchResult';
 import BookPage from './components/BookPage';
 import { useEffect, useState } from 'react';
+import './style/main.scss';
+
+
+
 
 function App() {
   const [books, setBooks] = useState([]);

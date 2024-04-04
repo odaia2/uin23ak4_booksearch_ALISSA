@@ -1,4 +1,5 @@
-import { useState } from "react";
+// Search.jsx
+import React, { useState } from "react";
 
 export default function Search({ setSearch, getBooks }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -16,9 +17,17 @@ export default function Search({ setSearch, getBooks }) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="search" placeholder="SearchField.." value={searchTerm} onChange={handleSearchChange} />
-            <button type="submit">Search</button>
-        </form>
+        <div className="search-container">
+            <form onSubmit={handleSubmit}>
+                <input 
+                    type="search" 
+                    placeholder="SearchBook.." 
+                    value={searchTerm} 
+                    onChange={handleSearchChange} 
+                    className="search-input" 
+                />
+                <button type="submit" className="search-button">Search</button>
+            </form>
+        </div>
     )
 }

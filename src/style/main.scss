@@ -1,0 +1,122 @@
+/* Generelt */
+body {
+    text-align: center;
+    background-color: #fff; 
+    color: #4a5568; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  }
+  
+  /* Header */
+  header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  /* Bokvisning */
+  .book-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 0;
+    margin-top: 25px;
+    box-sizing: border-box;
+  
+    .book-card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      border: 1px solid #4c51bf; /* Lys grå ramme */
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f3f1f1; /* Hvit bakgrunn */
+  
+      h3 {
+        margin-top: 10px;
+        color: #2d3748; /* Mørk grå overskriftsfarge */
+      }
+  
+      p {
+        margin: 5px 0;
+        color: #4a5568; /* Mørk grå tekstfarge */
+      }
+    }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1a202c; /* Mørk grå bakgrunnsfarge */
+    color: #cbd5e0; /* Lys grå tekstfarge */
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 25px;
+  }
+  
+  /* Bilde */
+  .img-cover {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Bokside */
+  .bookPage {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0; /* Lys grå ramme */
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Hvit bakgrunn */
+    margin: 0 auto;
+  }
+  
+  /* Bokarkiv */
+  .bokArkiv {
+    text-transform: uppercase;
+  }
+  
+  /* Knapp */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4c51bf; /* Lilla bakgrunnsfarge */
+    color: #fff; /* Hvit tekstfarge */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Søkecontainer */
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto;
+  
+    /* Søkefelt */
+    .search-input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #4c51bf; /* Lilla ramme */
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  
+    /* Søkeknapp */
+    .search-button {
+      background-color: #4c51bf; /* Lilla bakgrunnsfarge */
+      color: #fff; /* Hvit tekstfarge */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  
+    .search-button:hover {
+      background-color: #4338ca; /* Mørkere lilla ved hover */
+    }
+  }
+  
